@@ -1,0 +1,20 @@
+package com.gestion.medicaments.models;
+
+public enum Specialite {
+    GENERALISTE,
+    CARDIOLOGUE,
+    DERMATOLOGUE,
+    PEDIATRE,
+    NEUROLOGUE,
+    PSYCHIATRE,
+    GYNECOLOGUE,
+    OPHTALMOLOGUE,
+    DENTISTE,
+    ORTHOPEDISTE,
+    ENDOCRINOLOGUE,
+    ORL,
+    PNEUMOLOGUE,
+    UROLOGUE,
+    GASTROENTEROLOGUE,
+    RHUMATOLOGUE
+} 

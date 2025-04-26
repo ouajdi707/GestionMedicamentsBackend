@@ -1,0 +1,51 @@
+### Test Update Commande
+PUT http://localhost:8080/api/commandes/8
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTc0NDMzMzUyNiwiZXhwIjoxNzQ0NDE5OTI2fQ.DjH4Vt6z-30bKquVYBWlc48oCcRPrznEzje1YFaufUM
+
+{
+    "id": 8,
+    "date": "2025-04-11T01:38:33.603+00:00",
+    "fournisseur": {
+        "id": 2,
+        "nom": "modha3",
+        "adresse": "aaaaaa",
+        "telephone": 654564654,
+        "email": "wajdi.ammar@esprit.tn"
+    },
+    "etat": {
+        "id": 4,
+        "nom": "Annulée"
+    },
+    "lignesCommande": [
+        {
+            "medicament": {
+                "id": 2,
+                "nom": "zaeaze",
+                "description": "zeaaze",
+                "quantite": 3,
+                "dateExpiration": "2025-04-28",
+                "categorie": "Neurologique",
+                "prix": 440.05
+            },
+            "quantite": 1,
+            "prixUnitaire": 440.05,
+            "commande": {
+                "id": 8
+            }
+        }
+    ],
+    "livraison": {
+        "id": 8,
+        "dateLivraison": "2025-04-30T02:01:35.000Z",
+        "adresseLivraison": "mlkmlkm",
+        "notes": "ighfjkgxdwfsdfsdgfhgjhkbj",
+        "commande": {
+            "id": 8
+        }
+    }
+}
+
+### Test Get Commande (to verify update)
+GET http://localhost:8080/api/commandes/8
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTc0NDMzMzUyNiwiZXhwIjoxNzQ0NDE5OTI2fQ.DjH4Vt6z-30bKquVYBWlc48oCcRPrznEzje1YFaufUM 
